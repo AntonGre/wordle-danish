@@ -70,7 +70,7 @@ function App() {
             })}
             <button
               type="submit"
-              hidden
+              style={{opacity: 0}}
               disabled={!(text.length === 5)}
               onClick={handleSubmit}
             >
