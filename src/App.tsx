@@ -15,7 +15,7 @@ function App() {
   }
 
   function handleSubmit(event: React.MouseEvent) {
-    if (guess(text)) {
+    if (guess(text.toLocaleLowerCase())) {
       setText("");
     } else {
       setOpen(true);
@@ -87,7 +87,7 @@ function App() {
               type="button"
               onClick={handleClear}
             >
-              Clear
+              Reset
             </Button>
           </div>
         </form>
